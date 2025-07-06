@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="Assignment.css">
+</head>
+<style>
+  #redBox{
+  height: 300px;
+  width: 300px;
+  color: red;
+  background-color: gray;
+  display: flex;
+}
+
+</style>
+<body>
+  <div id="redBox"></div>
+  <button id="button1">click to change color</button>
+  <button id="btn2">back</button>
+  <script src="Assignment.js"></script>
+</body>
+<script>
+  const box = document.getElementById("redBox");
+const button1 = document.getElementById("button1");
+const btn = document.getElementById("btn2")
+
+button1.addEventListener("click", ()=>{
+  box.style.backgroundColor = "red";
+});
+  btn.addEventListener("click", ()=>{
+    box.style.backgroundColor = "grey";
+  });
+  
+</script>
+</html>
+
+
